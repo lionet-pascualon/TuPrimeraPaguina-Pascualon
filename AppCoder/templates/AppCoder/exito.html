@@ -1,0 +1,16 @@
+{% extends "AppCoder/base.html" %}
+
+{% block titulo %} Éxito {% endblock %}
+
+{% block contenido %}
+    <div class="text-center py-5">
+        <div class="alert alert-success shadow-sm">
+            <h2 class="alert-heading">¡Excelente!</h2>
+            <p class="lead">El curso se ha guardado correctamente en la base de datos.</p>
+        </div>
+        <div class="mt-4">
+            <a href="{% url 'Inicio' %}" class="btn btn-primary btn-lg">Volver al Inicio</a>
+            <a href="{% url 'CursoFormulario' %}" class="btn btn-outline-secondary btn-lg">Cargar otro</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "AppCoder/base.html" %}
+
+{% block titulo %} Buscar Camada {% endblock %}
+
+{% block contenido %}
+    <h2 class="mb-4">Buscador de Cursos</h2>
+    <p>Ingresá el número de la camada que deseás encontrar:</p>
+
+    <form action="/AppCoder/buscar/" method="GET" class="row g-3">
+        <div class="col-auto">
+            <input type="number" name="camada" class="form-control" placeholder="Ej: 12345">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Buscar Ahora</button>
+        </div>
+    </form>
+{% endblock %}

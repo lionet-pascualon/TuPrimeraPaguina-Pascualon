@@ -1,0 +1,32 @@
+{% extends "AppCoder/base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido %}
+    <div class="text-center py-5">
+        <h1 class="display-4 fw-bold text-dark">Bienvenido a <span class="text-primary">CODINAPP</span></h1>
+        <p class="lead mt-3">Sistema de gestión académica para el Proyecto Final de Python.</p>
+        <hr class="my-4" style="width: 50%; margin: auto;">
+        
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h4>📚 Cursos</h4>
+                    <p>Administrá todas las comisiones.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h4>👨‍🏫 Profesores</h4>
+                    <p>Carga y visualización de docentes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h4>🎓 Estudiantes</h4>
+                    <p>Gestión de alumnos inscriptos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
